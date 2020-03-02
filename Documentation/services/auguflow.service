@@ -1,0 +1,14 @@
+[Unit]
+Description=auguflow service
+After=network.target
+
+[Service]
+ExecStart=/home/grelot/Auguflow/bin/python /home/grelot/Auguflow/mysite/manage.py runserver
+WorkingDirectory=/home/grelot/Auguflow/mysite
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
