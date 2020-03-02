@@ -1,0 +1,7 @@
+cd Auguflow
+source bin/activate
+cd mysite
+./manage.py runserver
+
+
+
